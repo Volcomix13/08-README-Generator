@@ -36,9 +36,10 @@ const questions = [
         name: "Tests"
     },
     {
-        license: "What licence did you use?",
+        message: "What licence did you use?",
         name: "License",
-        type: ["None", "MIT License", "Apache Licence 2.0", "GNU General Public Licence v3.0"]
+        type: "list",
+        choices: ["None", "MIT License", "Apache Licence 2.0", "GNU General Public Licence v3.0"],
     },
     {
         gitHub: "Please add your GitHub username",
