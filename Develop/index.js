@@ -2,7 +2,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
-//const markdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -39,7 +38,7 @@ const questions = [
         message: "What licence did you use?",
         name: "License",
         type: "list",
-        choices: ["None", "MIT License", "Apache Licence 2.0", "GNU General Public Licence v3.0"],
+        choices: ["None", "MIT", "Apache2.0", "GNU-General-Public-Licencev3.0"],
     },
     {
         gitHub: "Please add your GitHub username",
@@ -47,7 +46,7 @@ const questions = [
     },
     {
         email: "Please add your email",
-        name: "E-mail"
+        name: "Email"
     }
 ];
 

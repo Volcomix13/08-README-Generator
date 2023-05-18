@@ -4,7 +4,7 @@ function renderLicenseBadge(license) {
   if (license == "None"){
     return "";
   }
-  return `![License](https://img.shields.io/badge/${License}-yellow.svg)`;
+  return `![License](https://img.shields.io/badge/license-${license}-yellow.svg)`;
   
 }
 
@@ -57,7 +57,8 @@ ${data.Tests}
 ${data.License}
 
 ## Questions
-${data.GitHub}
+GitHub:${data.GitHub}
+Email:${data.Email}
 
 `;
 }
